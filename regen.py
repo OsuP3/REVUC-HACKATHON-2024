@@ -19,7 +19,6 @@ def Regenerate(pdfile):
     #print(question) #for debugging
 
     api_key = os.getenv('API_TOKEN')
-    printstatement = []
     client = OpenAI(api_key=api_key)
     output_text = ''
     for i in range(len(question)-1):
